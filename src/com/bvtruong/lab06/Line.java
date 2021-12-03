@@ -1,0 +1,25 @@
+package com.bvtruong.lab06;
+
+public class Line extends Shape{
+
+
+    @Override
+    public void draw() {
+        System.out.println("Vẽ đường thẳng");
+    }
+
+    @Override
+    public void rotate(int angle) {
+        System.out.println("Đường thẳng quay một góc: " +angle);
+    }
+
+    @Override
+    public void moveLeft(int point) {
+        System.out.println("Di chuyển đường thẳng sang điểm " +point);
+    }
+
+    @Override
+    public void setColor(int color) {
+        System.out.println("Tô màu đường thẳng với mã màu " +color);
+    }
+}
