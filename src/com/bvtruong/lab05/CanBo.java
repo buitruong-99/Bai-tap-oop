@@ -9,7 +9,6 @@ public class CanBo {
     private String diachi;
 
     public CanBo() {
-        // hàm tạo không đối số
     }
     public CanBo(String hoten, String namsinh, Boolean gioitinh, String diachi) {
         // hàm tạo có đối số

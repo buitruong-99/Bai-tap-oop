@@ -8,7 +8,6 @@ public class QLCB {
     public static void main(String[] args) {
         ArrayList list = new ArrayList();
         CanBo canBo;
-//        Scanner scanner = new Scanner(System.in);
         int chucnang;
         do {
             System.out.println("1. Nhập thông tin mới cho cán bộ ");
@@ -46,6 +45,8 @@ public class QLCB {
                                 canBo = new NhanVien();
                                 canBo.input();
                                 list.add(canBo);
+                            default:
+                                System.out.println("VUi lòng chọn đúng cú pháp");
                         }
                     }
                     while (chucnang1 != 0);
@@ -68,6 +69,8 @@ public class QLCB {
                     System.out.println("Hiển thị danh sách cán bộ");
                     System.out.println(list);
                     break;
+                default:
+                    System.out.println("Vui lòng chọn đúng cú pháp");
             }
         }
         while (chucnang != 0);
