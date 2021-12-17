@@ -1,5 +1,7 @@
 package com.bvtruong.lab05_kethua;
 
+import java.util.Scanner;
+
 public class Teacher extends Person {
     private String rank;
 
@@ -17,5 +19,18 @@ public class Teacher extends Person {
 
     public void setRank(String rank) {
         this.rank = rank;
+    }
+
+    @Override
+    public void print() {
+        super.print();
+        System.out.println("rank = " + rank);;
+    }
+
+    @Override
+    public void input() {
+        super.input();
+        System.out.println("Nhập bậc: ");
+        this.setRank(new Scanner(System.in).nextLine());
     }
 }

@@ -1,5 +1,7 @@
 package com.bvtruong.lab05_kethua;
 
+import java.util.Scanner;
+
 public class Student extends Person{
     private String className;
 
@@ -17,5 +19,18 @@ public class Student extends Person{
 
     public void setClassName(String className) {
         this.className = className;
+    }
+
+    @Override
+    public void print() {
+        super.print();
+        System.out.println(" " + className);
+    }
+
+    @Override
+    public void input() {
+        super.input();
+        System.out.println("Nhập tên lớp: ");
+        this.setClassName(new Scanner(System.in).nextLine());
     }
 }

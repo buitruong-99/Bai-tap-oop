@@ -1,5 +1,7 @@
 package com.bvtruong.lab05_kethua;
 
+import java.util.Scanner;
+
 public class Person {
     private String name;
     private String address;
@@ -39,6 +41,16 @@ public class Person {
     }
     public void print() {
         System.out.println(name +" "+ address +" "+ deparment);
+    }
+
+    public void input() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Nhập họ tên: ");
+        name = scanner.nextLine();
+        System.out.println("Nhập địa chỉ: ");
+        address = scanner.nextLine();
+        System.out.println("Nhập phòng: ");
+        deparment = scanner.nextLine();
     }
 
 }
